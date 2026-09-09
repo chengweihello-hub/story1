@@ -53,6 +53,24 @@
   .no-pinyin rt{display:none;}
   .no-pinyin ruby{margin:0;}
 
+  /* ---------- nav ---------- */
+  .nav{
+    display:flex;flex-wrap:wrap;gap:8px;justify-content:center;
+    margin-bottom:clamp(14px,3vw,22px);
+    animation:rise .7s ease-out both;
+  }
+  .nav a{
+    font-family:'ZCOOL KuaiLe','KaiTi',serif;
+    font-size:clamp(.85rem,2.4vw,1.02rem);
+    text-decoration:none;color:var(--ink);
+    background:#FFFDF7;border:2px solid var(--line);
+    border-radius:999px;padding:.3em 1em;
+    box-shadow:0 2px 0 rgba(122,80,30,.14);
+    transition:transform .15s,border-color .15s,color .15s;
+  }
+  .nav a:hover{transform:translateY(-2px);border-color:var(--gold);color:var(--deep-red);}
+  .nav a.active{background:var(--deep-red);border-color:var(--deep-red);color:#FFF3DC;box-shadow:0 3px 0 #8F2A20;}
+
   /* ---------- header ---------- */
   header{
     text-align:center;
@@ -249,9 +267,17 @@
 <div class="ribbon"></div>
 <div class="wrap">
 
+  <nav class="nav">
+    <a href="index.html" class="active">三个臭皮匠</a>
+    <a href="caochong.html">曹冲称象</a>
+    <a href="simaguang.html">司马光砸缸</a>
+    <a href="kongrong.html">孔融让梨</a>
+    <a href="tiechu.html">铁杵磨成针</a>
+  </nav>
+
   <header>
     <span class="badge">
-      <ruby>成<rt>chéng</rt></ruby><ruby>语<rt>yǔ</rt></ruby><ruby>小<rt>xiǎo</rt></ruby><ruby>故<rt>gù</rt></ruby><ruby>事<rt>shì</rt></ruby>
+      <ruby>民<rt>mín</rt></ruby><ruby>间<rt>jiān</rt></ruby><ruby>典<rt>diǎn</rt></ruby><ruby>故<rt>gù</rt></ruby>
     </span>
     <h1>
       <ruby>三<rt>sān</rt></ruby><ruby>个<rt>gè</rt></ruby><ruby>臭<rt>chòu</rt></ruby><ruby>皮<rt>pí</rt></ruby><ruby>匠<rt>jiàng</rt></ruby><span class="pn">，</span><ruby>顶<rt>dǐng</rt></ruby><ruby>个<rt>gè</rt></ruby><ruby>诸<rt>zhū</rt></ruby><ruby>葛<rt>gě</rt></ruby><ruby>亮<rt>liàng</rt></ruby>
